@@ -6,15 +6,14 @@ const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
-import {
-    DB_DATABASE,
-    DB_HOST,
-    DB_PASSWORD,
-    DB_PORT,
-    DB_USER,
-    FRONTEND_URL,
-    PORT,
-  } from "./config.js";
+
+const DB_DATABASE = 'bd_puntos';
+const DB_HOST = 'dpg-cpcjt84f7o1s73fposog-a';
+const DB_PASSWORD = 'DhQ86k5lQrW1EGwAREzyyGl2EK1J5SQv';
+const DB_PORT =  '5432';
+const DB_USER = 'bd_puntos_user';
+const FRONTEND_URL = "localhost";
+const PORT = 3000;
   
 // Configuración de la base de datos (PostgreSQL)
 const pool = new pg.Pool({
