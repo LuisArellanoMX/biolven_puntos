@@ -16,7 +16,7 @@ const FRONTEND_URL = "localhost";
 const PORT = 3000;
   
 // Configuración de la base de datos (PostgreSQL)
-const pool = new pg.Pool({
+const pool = new Pool({
     host: DB_HOST,
     database: DB_DATABASE,
     user: DB_USER,
